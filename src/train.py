@@ -2,6 +2,7 @@ import pickle
 from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier
 
+
 def train_model():
     # Load dataset
     iris = load_iris()
@@ -14,6 +15,7 @@ def train_model():
     # Save model
     with open('src/models/iris_model.pkl', 'wb') as f:
         pickle.dump(model, f)
+
 
 if __name__ == '__main__':
     train_model()

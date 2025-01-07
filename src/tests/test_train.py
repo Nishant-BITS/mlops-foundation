@@ -1,7 +1,12 @@
-
 import os
+import sys
 import pickle
+
+# Add the root directory to sys.path (where 'src' is located)
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+
 from src.train import train_model
+
 
 def test_model_training():
     # Train the model
@@ -16,4 +21,3 @@ def test_model_training():
     assert model is not None, "Model is not a valid pickle object!"
 
     print("All tests passed!")
-    
