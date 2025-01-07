@@ -1,5 +1,10 @@
 import os
+import sys
 import pickle
+
+# Add the root directory to sys.path (where 'src' is located)
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+
 from src.train import train_model
 
 
