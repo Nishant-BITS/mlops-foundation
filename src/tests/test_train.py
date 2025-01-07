@@ -1,7 +1,7 @@
-
 import os
 import pickle
 from src.train import train_model
+
 
 def test_model_training():
     # Train the model
@@ -16,4 +16,3 @@ def test_model_training():
     assert model is not None, "Model is not a valid pickle object!"
 
     print("All tests passed!")
-    
