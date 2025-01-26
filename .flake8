@@ -13,10 +13,6 @@ exclude = .git,__pycache__,docs,tests
 
 # Allow the use of some specific import styles in Flask apps
 # (e.g., using relative imports in Flask blueprints)
-# (this is optional)
 per-file-ignores =
     # Allow relative imports in Flask blueprints
     src/*.py: F403,F405
-
-# Additional settings (optional)
-# You can adjust these further based on your specific needs
