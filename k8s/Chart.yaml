@@ -1,6 +1,0 @@
-apiVersion: v2
-name: mlops-foundation
-description: A Helm chart for MLOps Foundation
-type: application
-version: 0.1.1
-appVersion: "0.1.1"
